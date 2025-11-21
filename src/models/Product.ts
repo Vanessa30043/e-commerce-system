@@ -27,6 +27,5 @@ constructor (id:number, title:string, description:string ,category:string, price
 
     getPriceWithDiscount():number {
         return this.price * (this.discountPercentage / 100) + this.price
-
     }
 }
