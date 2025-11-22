@@ -1,7 +1,7 @@
-import {Product} from "../models/Product.js";
+import type Product from "../models/Product.js";
 
 
-function calculateTax(product:Product):number{
+export default function calculateTax(product:Product):number{
     const standardProductTaxRate=0.0475;
     const groceryProductTaxRate=0.03;
      console.log("standard product");
@@ -10,5 +10,6 @@ function calculateTax(product:Product):number{
      } 
      return product.price * standardProductTaxRate;
      }
+
      
 
