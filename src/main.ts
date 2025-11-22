@@ -1,14 +1,25 @@
 import Product from "./models/Product.js";
-
-const apple= new Product(1,"Apple","Gala Apple","groceries",1,20);
-const medicine= new Product(22,"Mucinex","cough medicine","medicine",10,5);
-
-console.log(apple.displayDetails());
-console.log(apple.getPriceWithDiscount());
-console.log(medicine.displayDetails());
-console.log(medicine.getPriceWithDiscount());
-    
-
+import { fetchProducts} from "./services/apiService.js";
+async function main() {
+    const product = await fetchProducts(); // returning a promise
+    const productInstances: Product[] = product.products.map(
+      (product) =>
+        new Product(
+        product.id,
+        product.title,
+        product.description,
+        product.category,
+        product.price,
+        product.discountPercentage
+        )
+    );
+    productInstances.forEach((prods: Product) => {
+        // looping through the products and calling the displayDetails and getPriceWithDiscount methods
+      console.log(prods.displayDetails());
+      console.log(prods.getPriceWithDiscount());
+    });
+  }
+  main();
 
 //const planner =  new PhysicalProduct("001","Planner",25,2) //sku ,Name, price, weight 
 

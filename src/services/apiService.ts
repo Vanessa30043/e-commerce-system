@@ -1,12 +1,11 @@
-export const fetchProducts = async (): Promise<{
-  products: {
+export const fetchProducts = async (): Promise<{products:{
     id: number;
     title: string;
     description: string;
     category: string;
     price: number;
     discountPercentage: number;
-  }[];
+  }[]; //products -empty array
 }> => {
   try {
     const response = await fetch("https://dummyjson.com/products");
