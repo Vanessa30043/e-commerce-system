@@ -137,3 +137,4 @@ How you approached async and error handling
 (Replace this with your own reflection when submitting.)
 
 During this project, I encountered challenges with TypeScript type definitions and structuring reusable modules. I learned how important it is to fully understand the API response before designing my model classes. Another challenge was implementing asynchronous functions while maintaining clean error handling. Using try/catch paired with a custom error handler helped me manage failed requests in a controlled way. I approached the project by planning out my modules first, then building the utilities, followed by the API service, and finally connecting everything inside main.ts. If I had more time, I would add a UI layer using HTML/CSS, create a search or filter system for products, and implement better formatting for console output. Overall, this SBA strengthened my confidence with TypeScript, OOP, and working with real-world APIs.
+
