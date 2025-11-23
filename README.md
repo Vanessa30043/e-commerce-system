@@ -229,6 +229,12 @@ https://perscholas.instructure.com/courses/2978/assignments/577968
 
 This lab can be completed on **Windows**, **macOS**, or **Linux**.
 
+
+
+## REFLECTION
+
+During this project, I encountered challenges with TypeScript type definitions and structuring reusable modules. I learned how important it is to fully understand the API response before designing my model classes.
+
 ----------
 
 ##  Installation
@@ -277,6 +283,3 @@ e-commerce-system/
 
 ----------
 
-## REFLECTION
-
-During this project, I encountered challenges with TypeScript type definitions and structuring reusable modules. I learned how important it is to fully understand the API response before designing my model classes.
